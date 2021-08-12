@@ -30,8 +30,8 @@
 
 1. What were the two theoretical misunderstandings that held back the field of neural networks?
    Ans:  
-   - One layer neural nets cannot simple function, e.g. XOR, thus neural nets aren't usable in real situations, which is kinda misleading because adding layers may solve the situation in theory.    
-   - Neural nets can do anything by adding more and more layers (two layers can approximate any kida functions in theory), which was not necessarily the case considering computational complexity in the past.  
+   - One layer neural nets cannot approximate even simple functions, e.g. XOR, thus neural nets aren't usable in real situations, which is kinda misleading because adding layers may solve the situation in theory.    
+   - Neural nets can do anything by adding more and more layers (two layers can approximate any kinda functions in theory), which was not necessarily the case considering computational complexity back in the day until the end of *Second AI Winter*.  
 
 1. What is a GPU?
    Ans:
