@@ -45,7 +45,8 @@
 1. Complete the Jupyter Notebook online appendix.
    Ans: DONE  
 1. Why is it hard to use a traditional computer program to recognize images in a photo?
-   
+   There was no good representation of parameters and features of an object back in the day. Even we had some techniques to extract some features to specific types of object, it is only applicable to these specific items, not being generalized. This approach,  often called feature engineering, depends on engineers understanding of some specific object. However, now we have neural nets, which takes care of even feature extraction automatically. This remarkably accelerated the area of computer vision.
+
 1. What did Samuel mean by "weight assignment"?
 1. What term do we normally use in deep learning for what Samuel called "weights"?
 1. Draw a picture that summarizes Samuel's view of a machine learning model.
