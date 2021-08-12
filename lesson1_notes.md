@@ -29,8 +29,16 @@
 
 
 1. What were the two theoretical misunderstandings that held back the field of neural networks?
+   Ans:  
+   - One layer neural nets cannot simple function, e.g. XOR, thus neural nets aren't usable in real situations, which is kinda misleading because adding layers may solve the situation in theory.    
+   - Neural nets can do anything by adding more and more layers (two layers can approximate any kida functions in theory), which was not necessarily the case considering computational complexity in the past.  
+
 1. What is a GPU?
+   Ans:
+   It stands for Graphics Processing Unit, which was originally used for game graphics. Later on, it turns out GPU is also applicable even in machine learning tasks, since GPU has way more processing units than CPU, enabling pararell processing in many small units in learning tasks.
+
 1. Open a notebook and execute a cell containing: `1+1`. What happens?
+   Ans: It gives me 2, which is the result of calculation 1+1 by Python.  
 1. Follow through each cell of the stripped version of the notebook for this chapter. Before executing each cell, guess what will happen.
 1. Complete the Jupyter Notebook online appendix.
 1. Why is it hard to use a traditional computer program to recognize images in a photo?
