@@ -58,7 +58,7 @@
 
 1. Why is it hard to understand why a deep learning model makes a particular prediction?
 
-  Ans: This is because a deep learning model could have multiple layers, and each layer have considerable amount of parameters, obscuring what is going on each steps of prediction as well as the process of learning, compared to traditional machine learning methods, e.g., logistic regression. Meanwhile, in some cases, it is possible to interprete deep learning's complex parameters; The concept is often called *Explanable AI*.
+  Ans: This is because a deep learning model could have multiple layers, and each layer have considerable amount of parameters, obscuring what is going on each steps of prediction as well as the process of learning, compared to traditional machine learning methods, e.g., logistic regression. Meanwhile, in some cases, it is possible to interprete deep learning's complex parameters; The concept is often called *Explanable AI*. In 2013, a technique to visualize convolitonal neural nets was introduced.(Matt Zeiler et al.)
 
 1. What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy?
 
@@ -107,13 +107,14 @@
 
    Ans: Metric is a measure of how good a model is, specifically for human beings. It is more readable, easier to understand for us. For example, *accuracy* is a metric to describe how accurately the model classifies with the validation set. Also, *error rate* is similar but is for describing how incorrectly the model classifies the validation set. Meanwhile, loss function is for model and optimizers to learn from the training set, and it is not necessarily usable as metric.  
 
-1. How can pretrained models help?
+1. How can pretrained models help?  
    Ans: Pretrained models have been already trained for tasks that datasets are provided. As long as the type of problem is similar, i.e. detecting cat's images from dog detection pretrained model, you may fine-tune parameters, and possibly save your time, rather than trainig a model from scratch. In image recognition, for example, pretrained models already have edge, gradient, and color information, and these information is generally helpful for many image recognition tasks.  Pretrained models are not always perfect, since they are trained on different tasks after all, but according to the fastbook, its capabilities have been underestimated by many people in both academica and companies, leading to the wrong assumption: "We have few resources, so we can't use deep learning!"
 
-1. What is the "head" of a model?
+1. What is the "head" of a model?  
    Ans:  When we use pretrained models for different but similar tasks, the last layer will be removed because that is very unique to the original training task. We replace it with different layer(s) called *head*. This layer(s) is typically randomly weighted with appropriate sizes, and weights are updated regarding to the dataset of new task.
-   
+
 1. What kinds of features do the early layers of a CNN find? How about the later layers?
+   Ans: 
 1. Are image models only useful for photos?
 1. What is an "architecture"?
 1. What is segmentation?
