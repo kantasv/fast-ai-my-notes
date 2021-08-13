@@ -105,8 +105,10 @@
 
 1. What is a metric? How does it differ from "loss"?
 
-   Ans:
+   Ans: Metric is a measure of how good a model is, specifically for human beings. It is more readable, easier to understand for us. For example, *accuracy* is a metric to describe how accurately the model classifies with the validation set. Also, *error rate* is similar but is for describing how incorrectly the model classifies the validation set. Meanwhile, loss function is for model and optimizers to learn from the training set, and it is not necessarily usable as metric.  
+
 1. How can pretrained models help?
+   Ans: 
 1. What is the "head" of a model?
 1. What kinds of features do the early layers of a CNN find? How about the later layers?
 1. Are image models only useful for photos?
