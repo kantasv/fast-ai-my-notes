@@ -65,11 +65,31 @@
   Ans:  Universal Approximiation Theorem
 
 1. What do you need in order to train a model?
+   Ans:
+   This is not an easy question, but to name key ingredents from my point of view:
+   - Architecture, e.g. CNNs
+   - Dataset to feed your model, often includes labels 
+   - performance measures e.g. loss function
+   - optimizer and its hyperparameters
 
 1. How could a feedback loop impact the rollout of a predictive policing model?
+
+   Ans:
+   First, datasets of the local crimes are fed into a machine learning model. Suppose dataset is biased; some specific race groups in some areas may have more tendency according to these stats. Unfortunately, even though such data reflects officer's biases and many other factors, model may output results that areas with such groups has higher crime probability. Based on the insight, local police may increase resources in these specific areas. As a conseqence, the more crimes are observed there, and affects next year's stats. Then, such stats could be fed into next machine learning models, and similar steps from may repeated over and over. This is one of the ethical issues that we face when we apply machine learning models into real life.
+
 1. Do we always have to use 224×224-pixel images with the cat recognition model?
+
+   Ans:
+   Not necessarily. 224x224 format is a convention in computer science fieald. You could use other sizes of images. However, you have to consider the relationship between sizes and computational resources.
+
 1. What is the difference between classification and regression?
+
+   Ans:
+   Classification is to classify some data into multiple groups, and the dataset fed into this task does not requires labels. For example, companies might want to use classificaton to segment users based on ther activities, and figure out what kind of segment to approach as business decision making.
+   Meanwhile, regression is to predict some quantitative infomation based on the past data with labels. For example, given people's social backgrounds, predicting someone's longevity could be an example of regression.
 1. What is a validation set? What is a test set? Why do we need them?
+   Ans:
+   
 1. What will fastai do if you don't provide a validation set?
 1. Can we always use a random sample for a validation set? Why or why not?
 1. What is overfitting? Provide an example.
