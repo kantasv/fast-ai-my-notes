@@ -47,12 +47,25 @@
 1. Why is it hard to use a traditional computer program to recognize images in a photo?  
    There was no good representation of parameters and features of an object back in the day. Even we had some techniques to extract some features to specific types of object, it is only applicable to these specific items, not being generalized. This approach,  often called feature engineering, depends on engineers understanding of some specific object. However, now we have neural nets, which takes care of even feature extraction automatically. This remarkably accelerated the area of computer vision.
 
-1. What did Samuel mean by "weight assignment"?
+1. What did Samuel mean by "weight assignment"?  
+   Ans: In his statement, weight assignment is a set of parameters to define operation to learn from inputs and gives you outputs. For every weight assignment has its performance, and a program could improve such weights by trying to maximize paformance.
+
 1. What term do we normally use in deep learning for what Samuel called "weights"?
+   Ans: Parameters  
+
 1. Draw a picture that summarizes Samuel's view of a machine learning model.
+   Ans: DONE
+
 1. Why is it hard to understand why a deep learning model makes a particular prediction?
+
+  Ans: This is because a deep learning model could have multiple layers, and each layer have considerable amount of parameters, obscuring what is going on each steps of prediction as well as the process of learning, compared to traditional machine learning methods, e.g., logistic regression. Meanwhile, in some cases, it is possible to interprete deep learning's complex parameters; The concept is often called *Explanable AI*.
+
 1. What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy?
+
+  Ans:  Universal Approximiation Theorem
+
 1. What do you need in order to train a model?
+
 1. How could a feedback loop impact the rollout of a predictive policing model?
 1. Do we always have to use 224×224-pixel images with the cat recognition model?
 1. What is the difference between classification and regression?
