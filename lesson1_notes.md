@@ -89,11 +89,23 @@
    Meanwhile, regression is to predict some quantitative infomation based on the past data with labels. For example, given people's social backgrounds, predicting someone's longevity could be an example of regression.
 1. What is a validation set? What is a test set? Why do we need them?
    Ans:
-   
+   Valiadtion set is a part of dataset that is used to measure how good the model is. Training set does not include validation set. This is to prevent model from memorizing dataset and failing to generalize to new dataset. In other words, this prevents overfitting, which I will explain later on this page.
+   Test set is similar to validaton set, but it is separeted from even ourselves to avoid creating biased models unconsicously. In other words, this prevents overfitting that happens due to modeler's side.
+
 1. What will fastai do if you don't provide a validation set?
+
+   Ans: Fastai automatically grab 20% of dataset by default if no validation set specified, and it treat these data as validation set, hiding such dataset from the process of learning.
+
 1. Can we always use a random sample for a validation set? Why or why not?
+   Ans:
+   We cannot always use such random sampling. This is particularly problematic when we deal with time series data. In this case, time axis have important imformation, so reducing continuity by random sampling over time axis could devastate such information. In this case, treating recent part of data as test set and taking the rest as training set, could be one of the alternatives, rather than random sampling. 
 1. What is overfitting? Provide an example.
+   Ans:
+   Overfitting is a situation where a model learns specific dataset's feature too specifically, and fails to generalize to unknown datasets. For example, suppose fitting a simple sine curve with some random noises with some polynomials. If the model adapt to the noized dataset too much, it could be learn outliers as important feature as other normal lines. This could give us less loss function value for the training set, but when humans look at the approximated curve, it could have crazy values outside the range of available training sets. To avoid this, validation set and test set are helpful. 
+
 1. What is a metric? How does it differ from "loss"?
+
+   Ans:
 1. How can pretrained models help?
 1. What is the "head" of a model?
 1. What kinds of features do the early layers of a CNN find? How about the later layers?
