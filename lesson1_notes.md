@@ -114,8 +114,10 @@
    Ans:  When we use pretrained models for different but similar tasks, the last layer will be removed because that is very unique to the original training task. We replace it with different layer(s) called *head*. This layer(s) is typically randomly weighted with appropriate sizes, and weights are updated regarding to the dataset of new task.
 
 1. What kinds of features do the early layers of a CNN find? How about the later layers?
-   Ans: 
+   Ans: Early layers could learn very basic edges, shapes. Meanwhile, tha later layers could learn more complex shapes that consists of building blocks of earlier layers, even human faces for example.
+
 1. Are image models only useful for photos?
+   Ans:
 1. What is an "architecture"?
 1. What is segmentation?
 1. What is `y_range` used for? When do we need it?
