@@ -127,5 +127,8 @@
 1. What is `y_range` used for? When do we need it?
    Ans: For models that predictions are continuous value, not categories, we have to tell fastai these range information. In that case, we use `y_range`.
 
-1. What are "hyperparameters"?
-1. What's the best way to avoid failures when using AI in an organization?
+1. What are "hyperparameters"?  
+   Ans: Higher level of parameters, that should be decided before starting learning. This special parameters gorvern lower level parameters, often called weights in neural nets for example, thus hyperparameters should be carefully chosen.
+
+1. What's the best way to avoid failures when using AI in an organization?  
+   Ans: You should clearly decide metrics, and properly manage validation set, and test sets, so that actual model the comes out can be usable in real situation. For example, it is pereferable to hide some portion of data from AI engineers, and you should test the model that comes out after the engineers made models. This is because they can state the model works well for the task of your interest, but in reality, thay may mislead you by overfitted and *seemingly* perfect model, or they made overfitted model without knowing it. Another factor is to set a baseline, such that model your team is working on should outperform. 
