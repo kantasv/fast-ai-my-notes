@@ -117,9 +117,15 @@
    Ans: Early layers could learn very basic edges, shapes. Meanwhile, tha later layers could learn more complex shapes that consists of building blocks of earlier layers, even human faces for example.
 
 1. Are image models only useful for photos?
-   Ans:
-1. What is an "architecture"?
+   Ans: Image models could be applied to various tasks, such as fraud detection, malware detection and sound classification. This is possible by converting non image dataset into image representation, and feeding them into image models. Sometimes you could come up with world-class models with this creative approach.
+
+1. What is an "architecture"?  
+   Ans:  A template of model that we pass inputs and weights, and fit.  
 1. What is segmentation?
+   Ans:  In image recognition, segmentation means segment multiple area based on semantics. For example, An autonomous car model needs to understand which area in its camera corresponds to human beings, road, or other objects.
+
 1. What is `y_range` used for? When do we need it?
+   Ans: For models that predictions are continuous value, not categories, we have to tell fastai these range information. In that case, we use `y_range`.
+
 1. What are "hyperparameters"?
 1. What's the best way to avoid failures when using AI in an organization?
